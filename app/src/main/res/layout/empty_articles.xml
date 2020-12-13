@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.goda.npmoa.presentation_layer.ui.home.news.ArticleEmptyItemViewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:onClick="@{() -> viewModel.onRetryClick()}"
+            android:text="@string/retry"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</layout>

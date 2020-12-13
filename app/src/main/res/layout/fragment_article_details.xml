@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="article"
+            type="com.goda.npmoa.presentation_layer.ui.home.news.ArticleDataItem" />
+
+        <variable
+            name="viewModel"
+            type="com.goda.npmoa.presentation_layer.ui.home.new_detail.ArticleDetailsViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                tools:context=".presentation_layer.ui.home.new_detail.ArticleDetailsFragment">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/coverImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="fitXY"
+                        app:imageUrl="@{article.imageUrl}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/ic_primary_knode2" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:onClick="@{() -> viewModel.onFavClick(viewModel.isFavorite, article)}"
+                        android:src="@{viewModel.isFavorite ? @drawable/ic_baseline_bookmarks_filled :@drawable/ic_bookmarks}"
+                        app:backgroundTint="@color/blue_black_light"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:src="@drawable/ic_bookmarks" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@{article.title}"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="Whistle-Blower Complaint Sets Off a Battle Involving Trump" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{article.title}"
+
+                    tools:text="Technology"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight=".5"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+               />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="end"
+                    android:gravity="end|center"
+                    android:layout_weight=".5"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_calen_ico"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/dateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:singleLine="true"
+                        android:text="@{article.publishedDate}"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"
+                        tools:text="2019-09-19" />
+
+                </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/authorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@{article.byline}"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp"
+                    tools:text="By JULIAN E. BARNES, NICHOLAS FANDOS, MICHAEL S. SCHMIDT and MATTHEW ROSENBERG" />
+
+                <TextView
+                    android:id="@+id/contentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@{article.abstractX}"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    tools:text="The magazine said the president had abused his power and violated the Constitution. Mr. Trump responded by saying he had done more for evangelicals than any other president." />
+
+
+
+                <TextView
+                    android:id="@+id/urlTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="@dimen/xxx"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:text="@{article.url}"
+                    android:textSize="12sp"
+                    tools:text="https://www.nytimes.com" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/AppTheme.toolbar" />
+    </RelativeLayout>
+</layout>

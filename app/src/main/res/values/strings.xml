@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NTMPOA</string>
+    <string name="continue_cn">CONTINUE</string>
+    <string name="egypt">Egypt</string>
+    <string name="favorites">Favorites</string>
+    <string name="empty_articles">not have news yet</string>
+    <string name="please_retry">Please Retry</string>
+    <string name="retry">Retry</string>
+</resources>

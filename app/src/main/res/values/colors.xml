@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="colorPrimary">@color/blue_black_light</color>
+     <color name="colorPrimaryDark">@color/black</color>
+     <color name="colorAccent">#FF4081</color>-->
+    <color name="colorPrimary">#032541</color>
+    <color name="colorPrimaryDark">#031D33</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="borderCy">#F7F7F7</color>
+    <color name="grstart">#E21853</color>
+    <color name="White_100">#ffffff</color>
+    <color name="White_95">#F2FFFFFF</color>
+    <color name="White_90">#e6ffffff</color>
+    <color name="White_85">#D9FFFFFF</color>
+    <color name="White_80">#CCFFFFFF</color>
+    <color name="White_75">#BFFFFFFF</color>
+    <color name="White_70">#b3ffffff</color>
+    <color name="White_65">#A6FFFFFF</color>
+    <color name="White_60">#99ffffff</color>
+    <color name="White_55">#8CFFFFFF</color>
+    <color name="White_50">#80FFFFFF</color>
+    <color name="White_45">#73FFFFFF</color>
+    <color name="white_43">#E8E6E6</color>
+    <color name="White_40">#66FFFFFF</color>
+    <color name="White_35">#59FFFFFF</color>
+    <color name="White_30">#4DFFFFFF</color>
+    <color name="White_25">#40FFFFFF</color>
+    <color name="White_20">#33FFFFFF</color>
+    <color name="grend">#35296D</color>
+    <color name="homeAccent">#6B207A</color>
+    <color name="homeAccent1">#C876A0</color>
+    <color name="home2">#63197B</color>
+    <color name="home3">#C363A3</color>
+    <color name="colorFaceBookBg">#3B5998</color>
+    <color name="yellew">#FFD245</color>
+    <color name="yellew2">#FFE951</color>
+    <color name="greyMake">#C7C7CC</color>
+    <color name="greyMake2">#858585</color>
+    <color name="greywhite">#FCFCFC</color>
+    <color name="greywhite2">#F7F7F7</color>
+    <color name="progress_bar_line">#D0151C</color>
+
+    <color name="change_positive">#00FF00</color>
+    <color name="change_negative">#FF0000</color>
+    <color name="black_5">#0D000000
+    </color> <!-- 5 is for alpha and others pairs zero's are for R G B -->
+    <color name="black_10">#1A000000
+    </color> <!-- 5 is for alpha and others pairs zero's are for R G B -->
+    <color name="white_10">#1AFFFFFF
+    </color> <!-- 5 is for alpha and others pairs zero's are for R G B -->
+    <color name="white_25">#40FFFFFF
+    </color> <!-- 5 is for alpha and others pairs zero's are for R G B -->
+    <color name="black_20">#33000000
+    </color> <!-- 20 is for alpha and others pairs zero's are for R G B -->
+    <color name="black_30">#4D000000
+    </color> <!-- 20 is for alpha and others pairs zero's are for R G B -->
+    <color name="black_25">#40000000
+    </color> <!-- 99 is for alpha and others pairs zero's are for R G B -->
+    <color name="black_35">#59000000
+    </color> <!-- 99 is for alpha and others pairs zero's are for R G B -->
+    <color name="black_60">#99000000
+    </color> <!-- 99 is for alpha and others pairs zero's are for R G B -->
+    <color name="white_35">#59FFFFFF
+    </color> <!-- 99 is for alpha and others pairs zero's are for R G B -->
+    <color name="white_60">#99FFFFFF
+    </color> <!-- 99 is for alpha and others pairs zero's are for R G B -->
+
+    <color name="red">#FF0000</color>
+    <color name="greyLine">#C8C7CC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whatsBgk">#25D366</color>
+    <color name="black">#000000</color>
+    <color name="grey">#696969</color>
+    <color name="grey1">#2A2A2A</color>
+    <color name="greylight">#D3D3D3</color>
+    <color name="colorTransparent">#00b75c00</color>
+    <color name="colorTransparen2t">#0F1230</color>
+    <color name="toolbarTransparent">#00FFFFFF</color>
+    <color name="red_700">#d32f2f</color>
+    <color name="red_800">#c62828</color>
+    <color name="light_gray">#dbdbdb</color>
+    <color name="gray">#7e7e7e</color>
+    <color name="semi_gray">#979797</color>
+    <color name="dark_gray">#696969</color>
+    <color name="bg_color">#f7f7f7</color>
+
+    <color name="black_effective">#2a2a2a</color>
+    <color name="shadow">#d0d8dc</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent_white">#88ffffff</color>
+    <color name="fb">#3b5998</color>
+    <color name="google">#d34836</color>
+    <color name="red_dark">#F06423</color>
+    <color name="red_dark2">#D85A1B</color>
+    <color name="cyan_light">#c9ebee</color>
+    <color name="cyan">#b5e3e7</color>
+    <color name="cyan_dark">#70BDC6</color>
+    <color name="navy_blue">#214258</color>
+    <color name="navy_blue_dark">#1C3A4E</color>
+    <color name="light_green">#78DC96</color>
+    <color name="light_blue">#55C8F0</color>
+    <color name="blue_black_dark">#13171d</color>
+    <color name="blue_black_light">#516179</color>
+    <color name="blue_grey_light">#A5B4C8</color>
+    <color name="orange">#FFA500</color>
+    <color name="yellow">#fff44f</color>
+</resources>
