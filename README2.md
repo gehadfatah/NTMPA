@@ -1,4 +1,4 @@
-# news-app
+# ntmpa-app
 [![Kotlin Version](https://img.shields.io/badge/kotlin-1.5.20-blue.svg)](http://kotlinlang.org/)
 
 A news listing app built with Android Jetpack.
@@ -15,7 +15,6 @@ Libraries Used
      asynchronous tasks for optimal execution.
 * [Glide][5] for image loading
 * [Retrofit][6] Type-safe HTTP client for Android and Java
-* [MVVM architecture][7]
 * [Coroutines][8] asynchronous tasks
 * [Hilt][9] Dependency Injection
 * [Navigation with safe args][10] navigate across, into, and back out from the different pieces of content within your app
@@ -38,7 +37,7 @@ Android Studio IDE setup
 [13]: https://newsapi.org/
 
 ## Architecture
-MarvelHeroes is based on MVVM architecture and a repository pattern.
+ntmpa is based on MVVM architecture and a repository pattern.
 
 ## Unit Testing Frameworks
 Unit Tests verify the interactions of viewmodels between repositories and dao & REST api requests.
