@@ -113,7 +113,6 @@ class ArticleFragment : BaseFragment<FragmentNewsBinding, ArticleViewModel>(),
             /* every time connection state changes, we'll be notified and can perform action accordingly */
             if (connection != null && isAdded) {
                 if (connection.isConnected) {
-                    // callFetchTags()
                     onRetryClick()
                 } else {
                     getViewDataBinding().addressLookingUp.showSnakeBar(getString(R.string.no_internet_connection))

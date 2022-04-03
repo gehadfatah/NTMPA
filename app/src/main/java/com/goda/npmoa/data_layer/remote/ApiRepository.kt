@@ -16,8 +16,9 @@ class ApiRepository @Inject constructor(private val apiService: ApiService, @par
     ApiDataSource {
     private val ioDispatcher: CoroutineDispatcher = Dispatchers.IO
 
+
     override suspend fun getArticles(period: Int): Result<ArticlesResponse> =
-        wrapEspressoIdlingResource {
+       // wrapEspressoIdlingResource {
 
             withContext(ioDispatcher) {
                 try {
@@ -27,6 +28,6 @@ class ApiRepository @Inject constructor(private val apiService: ApiService, @par
                     return@withContext Result.Error(e.localizedMessage)
                 }
             }
-        }
+    //    }
 
 }

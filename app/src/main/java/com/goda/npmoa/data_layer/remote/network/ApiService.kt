@@ -10,6 +10,6 @@ interface ApiService {
     suspend fun getMostArticles(@Path("period") period: Int, @Query("api-key") apiKey: String): ArticlesResponse
 
     @GET(ApiEndPoint.ENDPOINT_All_Sections_ARTICLES)
-    suspend fun getArticles(@Path("period") period: Int, @Query("api-key") apiKey: String): ArticlesResponse
+    suspend fun getArticles(@Path("period") period: Int=7, @Query("api-key") apiKey: String): ArticlesResponse
 
 }

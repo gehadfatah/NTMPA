@@ -1,13 +1,16 @@
 package com.goda.npmoa.data_layer.model.api
 
+import androidx.annotation.Keep
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
+
 
 class ArticlesResponse {
     @SerializedName("results")
     var articles: List<Article>? = null
 
     class Article {
-        val section: String?=null
+        var section: String?=null
         val source: String?=null
         var id: Long = 0
         var url: String? = null

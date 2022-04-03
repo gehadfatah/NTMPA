@@ -48,10 +48,10 @@ class DbRepository @Inject constructor(private val mAppDatabase: AppDatabase) :
     }
 
     override fun allArticles(): LiveData<List<Article>> {
-        wrapEspressoIdlingResource {
+      //  wrapEspressoIdlingResource {
 
             return mAppDatabase.articleDao().loadAll()
-        }
+      //  }
     }
 
 }
