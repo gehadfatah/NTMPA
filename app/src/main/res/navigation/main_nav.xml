@@ -6,7 +6,7 @@
     app:startDestination="@id/articleFragment">
     <fragment
         android:id="@+id/articleFragment"
-        android:name="com.goda.npmoa.presentation_layer.ui.home.news.ArticleFragment"
+        android:name="com.goda.npmoa.presentation_layer.ui.home.news.fragment.ArticleFragment"
         android:label="fragment_article"
         tools:layout="@layout/fragment_news">
         <action
@@ -22,13 +22,13 @@
 
     <fragment
         android:id="@+id/articleDetailsFragment"
-        android:name="com.goda.npmoa.presentation_layer.ui.home.new_detail.ArticleDetailsFragment"
+        android:name="com.goda.npmoa.presentation_layer.ui.home.new_detail.fragments.ArticleDetailsFragment"
         android:label="fragment_article_details"
         tools:layout="@layout/fragment_article_details" />
 
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.goda.npmoa.presentation_layer.ui.home.favorites.FavoritesFragment"
+        android:name="com.goda.npmoa.presentation_layer.ui.home.favorites.fragments.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites">
 

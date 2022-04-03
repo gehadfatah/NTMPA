@@ -7,8 +7,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.goda.npmoa.BR
 import com.goda.npmoa.R
 import com.goda.npmoa.databinding.HomeActivityBinding
-import com.goda.npmoa.presentation_layer.ui.base.ViewModelProviderFactory
-import com.goda.npmoa.presentation_layer.ui.base.BaseActivity
+import com.goda.npmoa.presentation_layer.ui.base.di.ViewModelProviderFactory
+import com.goda.npmoa.presentation_layer.ui.base.ui.BaseActivity
 import dagger.android.HasAndroidInjector
 import javax.inject.Inject
 

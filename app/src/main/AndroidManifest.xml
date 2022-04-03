@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="n">
-        <activity android:name="com.goda.npmoa.presentation_layer.ui.home.HomeActivity">
+        <activity android:name="com.goda.npmoa.presentation_layer.ui.home.HomeActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

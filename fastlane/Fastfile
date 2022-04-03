@@ -36,3 +36,37 @@ platform :android do
     upload_to_play_store
   end
 end
+
+lane :distribute do
+
+    gradle(
+         task: 'assemble',
+         build_type: 'Debug'
+    )
+
+   // gradle(   tasks: ["getCommitMessage"])
+
+    firebase_app_distribution(
+            app: "1:485636102691:android:5b0b9497e137be1f",
+            groups: "testers",
+            release_notes_file: "release-notes.txt",
+            service_credentials_file: "distribution-key.json"
+    )
+
+end
+
+lane :beta do
+  gradle(task: 'clean')
+  gradle(
+    task: 'assemble',
+    build_type: 'release'
+  )
+  upload_to_play_store(
+    package_name: 'com.goda.npmoa',
+    track: 'beta',
+    apk: 'app/build/outputs/apk/release/app-release.apk',
+    skip_upload_metadata: 'true',
+    skip_upload_images: 'true',
+    skip_upload_screenshots: 'true'
+  )
+end

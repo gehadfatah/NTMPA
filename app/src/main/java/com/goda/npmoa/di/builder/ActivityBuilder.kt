@@ -1,10 +1,10 @@
 package com.goda.npmoa.di.builder
 
 import com.goda.npmoa.presentation_layer.ui.home.HomeActivity
-import com.goda.npmoa.presentation_layer.ui.home.HomeActivityModule
-import com.goda.npmoa.presentation_layer.ui.home.news.ArticleFragmentProvider
-import com.goda.npmoa.presentation_layer.ui.home.new_detail.ArticleDetailsFragmentProvider
-import com.goda.npmoa.presentation_layer.ui.home.favorites.FavoritesFragmentProvider
+import com.goda.npmoa.presentation_layer.ui.home.di.HomeActivityModule
+import com.goda.npmoa.presentation_layer.ui.home.news.di.ArticleFragmentProvider
+import com.goda.npmoa.presentation_layer.ui.home.new_detail.di.ArticleDetailsFragmentProvider
+import com.goda.npmoa.presentation_layer.ui.home.favorites.di.FavoritesFragmentProvider
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

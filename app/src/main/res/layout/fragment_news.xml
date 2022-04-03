@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="com.goda.npmoa.presentation_layer.ui.home.news.ArticleViewModel" />
+            type="com.goda.npmoa.presentation_layer.ui.home.news.viewmodel.ArticleViewModel" />
 
     </data>
 
@@ -19,7 +19,7 @@
 
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark"
-        tools:context=".presentation_layer.ui.home.news.ArticleFragment">
+        tools:context=".presentation_layer.ui.home.news.fragment.ArticleFragment">
 
         <LinearLayout
             android:layout_width="match_parent"

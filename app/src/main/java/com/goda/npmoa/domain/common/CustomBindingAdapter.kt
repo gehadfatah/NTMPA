@@ -1,9 +1,7 @@
 package com.goda.npmoa.domain.common
 
 import android.graphics.Typeface
-import android.graphics.drawable.Drawable
 import android.text.TextUtils
-import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -12,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.goda.npmoa.R
-import com.goda.npmoa.presentation_layer.ui.base.BaseRecyclerViewAdapter
+import com.goda.npmoa.presentation_layer.ui.base.adapters.BaseRecyclerViewAdapter
 
 
 object CustomBindingAdapter {

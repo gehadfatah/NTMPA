@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.goda.npmoa.presentation_layer.ui.home.news.ArticleEmptyItemViewModel" />
+            type="com.goda.npmoa.presentation_layer.ui.home.news.datamodel.ArticleEmptyItemViewModel" />
     </data>
 
     <LinearLayout

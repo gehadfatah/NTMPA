@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.goda.npmoa.presentation_layer.ui.home.favorites.FavoritesViewModel" />
+            type="com.goda.npmoa.presentation_layer.ui.home.favorites.viewmodel.FavoritesViewModel" />
     </data>
 
     <LinearLayout
@@ -17,7 +17,7 @@
         android:id="@+id/cont"
 
         android:orientation="vertical"
-        tools:context=".presentation_layer.ui.home.favorites.FavoritesFragment">
+        tools:context=".presentation_layer.ui.home.favorites.fragments.FavoritesFragment">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"

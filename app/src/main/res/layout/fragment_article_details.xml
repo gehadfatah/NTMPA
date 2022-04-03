@@ -7,11 +7,11 @@
 
         <variable
             name="article"
-            type="com.goda.npmoa.presentation_layer.ui.home.news.ArticleDataItem" />
+            type="com.goda.npmoa.presentation_layer.ui.home.news.datamodel.ArticleDataItem" />
 
         <variable
             name="viewModel"
-            type="com.goda.npmoa.presentation_layer.ui.home.new_detail.ArticleDetailsViewModel" />
+            type="com.goda.npmoa.presentation_layer.ui.home.new_detail.viewmodel.ArticleDetailsViewModel" />
     </data>
 
     <RelativeLayout
@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:orientation="vertical"
-                tools:context=".presentation_layer.ui.home.new_detail.ArticleDetailsFragment">
+                tools:context=".presentation_layer.ui.home.new_detail.fragments.ArticleDetailsFragment">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -81,7 +81,7 @@
                     android:id="@+id/tv_section"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@{article.title}"
+                    android:text="@{article.section}"
 
                     tools:text="Technology"
                     android:layout_marginLeft="16dp"
