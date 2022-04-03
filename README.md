@@ -39,6 +39,8 @@ This module requires the following modules/libraries:
 
 .fastlane to distribute apk
 
+.auto detect for internet then fetch again
+
 ## Unit Testing Frameworks
 
 Unit Tests verify the interactions of viewmodels between repositories and dao & REST api requests.

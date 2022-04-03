@@ -6,4 +6,5 @@
     <string name="empty_articles">not have news yet</string>
     <string name="please_retry">Please Retry</string>
     <string name="retry">Retry</string>
+    <string name="no_internet_connection">no internet connection</string>
 </resources>

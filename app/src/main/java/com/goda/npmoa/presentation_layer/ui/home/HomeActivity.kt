@@ -50,4 +50,6 @@ class HomeActivity : BaseActivity<HomeActivityBinding, HomeViewModel>(),
             }
 
     }
+
+
 }

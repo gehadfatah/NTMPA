@@ -1,6 +1,7 @@
 package com.goda.npmoa
 
 import android.app.Application
+import com.goda.npmoa.data_layer.common.ApplicationIntegration
 import com.goda.npmoa.di.component.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
@@ -18,6 +19,8 @@ class NTMPOAApplication : Application(), HasAndroidInjector {
             .application(this)
             .build()
             .inject(this)
+        ApplicationIntegration.with(this)
+
     }
 
     override fun androidInjector(): AndroidInjector<Any> {

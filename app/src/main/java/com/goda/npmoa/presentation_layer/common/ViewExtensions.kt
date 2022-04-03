@@ -19,6 +19,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.ScrollView
+import android.widget.TextView
 import androidx.annotation.DrawableRes
 import androidx.core.content.ContextCompat
 import androidx.core.view.forEach
@@ -196,7 +197,12 @@ fun View.showSnackbar(message: String) {
         snackBar.show()
     }
 }
-
+fun View.showSnakeBar(message: String) {
+    val snakeBar = Snackbar.make(this, message, Snackbar.LENGTH_LONG)
+    val textView = snakeBar.view.findViewById(com.google.android.material.R.id.snackbar_text) as TextView
+    textView.maxLines = 3
+    snakeBar.show()
+}
 fun View.showSnackbar(message: String, intResourse: Int) {
     if (!TextUtils.isEmpty(message)) {
         val snackBar = Snackbar.make(this, message, Snackbar.LENGTH_LONG)

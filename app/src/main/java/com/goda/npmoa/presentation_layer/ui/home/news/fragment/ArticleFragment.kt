@@ -1,18 +1,23 @@
 package com.goda.npmoa.presentation_layer.ui.home.news.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.goda.npmoa.BR
 import com.goda.npmoa.R
+import com.goda.npmoa.data_layer.common.ApplicationIntegration
+import com.goda.npmoa.data_layer.common.ConnectionLiveData
 import com.goda.npmoa.presentation_layer.ui.base.di.ViewModelProviderFactory
 import com.goda.npmoa.databinding.FragmentNewsBinding
+import com.goda.npmoa.presentation_layer.common.showSnakeBar
 import com.goda.npmoa.presentation_layer.ui.base.ui.BaseFragment
 import com.goda.npmoa.presentation_layer.ui.home.HomeActivity
 import com.goda.npmoa.presentation_layer.ui.home.news.ArticleNavigator
@@ -84,6 +89,7 @@ class ArticleFragment : BaseFragment<FragmentNewsBinding, ArticleViewModel>(),
         )
         setHasOptionsMenu(true)
         setUpRecyclerView()
+        setNetworkListner()
     }
 
     private fun setUpRecyclerView() {
@@ -99,7 +105,25 @@ class ArticleFragment : BaseFragment<FragmentNewsBinding, ArticleViewModel>(),
         inflater.inflate(R.menu.main, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
+    private fun setNetworkListner() {
+        /* Live data object and setting an observer on it to monitor connection status to update countries  */
+        val connectionLiveData =
+            ConnectionLiveData(ApplicationIntegration.getApplication())
+        connectionLiveData.observe(viewLifecycleOwner, Observer { connection ->
+            /* every time connection state changes, we'll be notified and can perform action accordingly */
+            if (connection != null && isAdded) {
+                if (connection.isConnected) {
+                    // callFetchTags()
+                    onRetryClick()
+                } else {
+                    getViewDataBinding().addressLookingUp.showSnakeBar(getString(R.string.no_internet_connection))
+                    Log.d("d", "onChanged: ")
 
+                }
+            }
+        })
+
+    }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.action_favorites) {
             getNavController().navigate(R.id.action_articleFragment_to_favoritesFragment)

@@ -1,10 +1,15 @@
 package com.goda.npmoa.presentation_layer.ui.base.ui
 
 import android.os.Bundle
+import android.util.Log
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
+import androidx.lifecycle.Observer
+import com.goda.npmoa.R
+import com.goda.npmoa.data_layer.common.ApplicationIntegration
+import com.goda.npmoa.data_layer.common.ConnectionLiveData
 import com.goda.npmoa.presentation_layer.ui.base.BaseViewModel
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
@@ -57,4 +62,6 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
     override fun androidInjector(): AndroidInjector<Any> {
         return fragmentDispatchingAndroidInjector
     }
+
+
 }
